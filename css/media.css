@@ -48,6 +48,7 @@
         padding: 66px 26px;
         position: absolute;
         top: 0;
+        right: 0;
         left: -25px;
         width: 100vw;
         background-color: var(--color_white);
@@ -74,6 +75,7 @@
 
     .menu__link {
         padding: 10px;
+        display: block;
         font-size: 34px;
         line-height: 42px;
         font-weight: bold;

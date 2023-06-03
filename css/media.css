@@ -1,0 +1,146 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 738px;
+    }
+
+    .skills__carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .header__container {
+        padding: 0;
+        border: none;
+    }
+
+    .menu__list--active + .header__btn-box {
+        display: flex;
+        position: absolute;
+        top: 600px;
+        right: -10px;
+        z-index: 20;
+        gap: 8px;        
+    }
+
+    .btn__language {
+        font-size: 34px;
+        line-height: 42px;
+        transform: rotate(90deg);
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .menu__list {
+        padding: 66px 26px;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 100vw;
+        background-color: var(--color_white);
+        min-height: 800px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 68px;
+        transition: opacity 0.3s ease-in, visibility 0.3s ease-in, transform 0.3s ease-in;
+    }
+
+    .menu__list--active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+
+    .menu__link {
+        padding: 10px;
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .home__container {
+        padding-top: 0px;  
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .home__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home__btn-box {
+        display: none;
+    }
+
+    .home__name {
+        margin-bottom: 23px;
+        font-size: 47px;
+        line-height: 58px;
+    }
+
+    .img-mobail {
+        display: block;
+    }
+
+    .img-desc {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+
+    .skills__carts {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        height: 100%;
+    }
+    
+    .portfolio__item {
+        margin-bottom: 75px;
+    }
+
+    .contacts__link {
+        width: 100%;
+    }
+
+    .social__links {
+        gap: 50px;
+    }
+
+    .contacts__text, 
+    .contacts__text-social {
+        width: 80%;
+    }
+}

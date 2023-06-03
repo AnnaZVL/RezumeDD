@@ -14,25 +14,26 @@ $menuLink.forEach((el) => {
     });
 });
 
-const $en = document.querySelectorAll('.en'),
-    $ru = document.querySelectorAll('.ru'),
-    $btnEn = document.querySelector('.btn-en'),
-    $btnRu = document.querySelector('.btn-ru');
+// перевод на русский/английский
+// const $en = document.querySelectorAll('.en'),
+//     $ru = document.querySelectorAll('.ru'),
+//     $btnEn = document.querySelector('.btn-en'),
+//     $btnRu = document.querySelector('.btn-ru');
 
-    $btnEn.addEventListener('click', () => {
-        $ru.forEach((el) => {            
-            el.style.display = 'none';
-        });
-        $en.forEach((el) => {
-            el.style.display = 'block';
-        });
-    });
+//     $btnEn.addEventListener('click', () => {
+//         $ru.forEach((el) => {            
+//             el.style.display = 'none';
+//         });
+//         $en.forEach((el) => {
+//             el.style.display = 'block';
+//         });
+//     });
 
-    $btnRu.addEventListener('click', () => {
-        $en.forEach((el) => {
-            el.style.display = 'none';
-        });
-        $ru.forEach((el) => {
-            el.style.display = 'block';
-        });
-    });
+//     $btnRu.addEventListener('click', () => {
+//         $en.forEach((el) => {
+//             el.style.display = 'none';
+//         });
+//         $ru.forEach((el) => {
+//             el.style.display = 'block';
+//         });
+//     });

@@ -20,9 +20,11 @@ const $en = document.querySelectorAll('.en'),
     $btnRu = document.querySelector('.btn-ru');
 
     $btnEn.addEventListener('click', () => {
-        $ru.forEach((el) => {
-            console.log('object');
+        $ru.forEach((el) => {            
             el.style.display = 'none';
+        });
+        $en.forEach((el) => {
+            el.style.display = 'block';
         });
     });
 
